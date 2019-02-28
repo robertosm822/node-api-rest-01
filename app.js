@@ -4,7 +4,7 @@ let morgan = require('morgan')
 let mongoose = require('mongoose')
 let cors = require('cors')
 //recurso para manipular consumo de apis http via ajax request()
-let request = require('request')
+//let request = require('request')
 
 let routes = require('./routes')
 
@@ -22,13 +22,9 @@ let db = mongoose.connect('mongodb+srv://strarWars:78Rest65@cluster0-rtnuj.mongo
 
 routes(app)
 
+
 app.listen(3000, () => {
-	/*
-	request('https://swapi.co/api/planets/1/', function(error, response, body){
-		let Planeta = JSON.parse(body);
-		console.log(Planeta.films);
-	});
-	*/
 	
 	console.log('Express server has been started')
 })
+//module.exports = app;

@@ -4,8 +4,8 @@ module.exports = (req, res) => {
 	Planet
 		.find({})
 		.populate('category')
-		.then((bills) => {
-			if (!bills || !bills.length) {
+		.then((planets) => {
+			if (!planets || !planets.length) {
 				return res.status(404)
 						  .json({
 							  status: false,
@@ -16,7 +16,7 @@ module.exports = (req, res) => {
 			return res.status(200)
 					  .json({
 						  status: true,
-						  data: bills
+						  data: planets
 					  })
 		})
 		.catch(err => res.status(500)

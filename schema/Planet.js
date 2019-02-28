@@ -14,8 +14,8 @@ const Planet = new mongoose.Schema({
 		required: true
 	},
 	films:{
-		type: Array,
-		required: false
+		type: String,
+		default: null
 	},
 	date: {
 		type: Date,

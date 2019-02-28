@@ -1,7 +1,8 @@
 let express = require('express')
 let create = require('./services/create')
 let list = require('./services/list')
-//import remove from './services/remove'
+let remove = require('./services/remove')
+let searchByName = require('./services/searchByName')
 
 
 const router = express.Router()
@@ -10,6 +11,8 @@ const router = express.Router()
 router.get('/', list)
 //localhost:3000/bills  via postman
 router.post('/', create)
-//router.delete('/:id', remove)
+router.delete('/:id', remove)
+//busca por nome
+router.get('/search', searchByName)
 
-module.exports = router
+module.exports = router;
