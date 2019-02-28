@@ -1,10 +1,10 @@
-import hello from './hello/index'
-import bills from './bills/index'
-import planets from './planets/index'
+//let hello = require('./hello/index')
+//let bills 	= require('./bills/index')
+let planets	= require('./planets/index')
 
-export default (app) => {
-	app.use('/', hello)
-	app.use('/bills', bills)
+module.exports =  (app) => {
+	//app.use('/', hello)
+	//app.use('/bills', bills)
 	app.use('/planets', planets)
 
 }

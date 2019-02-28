@@ -1,6 +1,6 @@
-import express from 'express'
-import create from './services/create'
-import list from './services/list'
+let express = require('express')
+let create = require('./services/create')
+let list = require('./services/list')
 //import remove from './services/remove'
 
 
@@ -12,4 +12,4 @@ router.get('/', list)
 router.post('/', create)
 //router.delete('/:id', remove)
 
-export default router
+module.exports = router

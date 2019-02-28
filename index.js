@@ -1,12 +1,12 @@
-import express from 'express'
-import bodyParser from 'body-parser'
-import morgan from 'morgan'
-import mongoose from 'mongoose'
-import cors from 'cors'
+let express = require('express')
+let bodyParser = require('body-parser')
+let morgan = require('morgan')
+let mongoose = require('mongoose')
+let cors = require('cors')
 //recurso para manipular consumo de apis http via ajax request()
-import request from 'request'
+let request = require('request')
 
-import routes from './routes'
+let routes = require('./routes')
 
 const app = express()
 

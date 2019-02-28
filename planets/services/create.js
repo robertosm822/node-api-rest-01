@@ -1,6 +1,6 @@
-import Planet from './../../schema/Planet'
+let Planet = require('./../../schema/Planet')
 
-export default (req, res) => {
+module.exports = (req, res) => {
 	let planet = new Planet(req.body)
 	
 	planet
