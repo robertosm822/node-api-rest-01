@@ -15,15 +15,10 @@ module.exports = (req, res) => {
 
 
 /*
-exports.update = function (req, res) {
-    Car.update({
-        _id: req.params.id
-    }, req.body, function (err, car) {
-        if(err) {
-            return;
-        }
 
-        res.redirect('/cars');
-    });
-};
+- Adicionar um planeta (com nome, clima e terreno)
+- Listar planetas
+- Buscar por nome
+- Buscar por ID
+- Remover planeta
 */

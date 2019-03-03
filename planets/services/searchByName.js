@@ -10,6 +10,6 @@ module.exports = (req, res) => {
 				name: { $regex : [req.query.name] }
 				}, function(err, data){
 					res.json(data);
-				}).limit(10);
+				}).limit(20);
 		
 }
